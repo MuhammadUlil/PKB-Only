@@ -1,5 +1,7 @@
 import numpy as np
 
+hypothesis = (images, labels)
+
 print_statistics(images, t_images, labels, t_labels):
     #number of training dataset
     len(labels)
