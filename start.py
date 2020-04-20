@@ -12,7 +12,6 @@ labels = np.array(labels)
 t_labels = np.array(t_labels)
 
 #print_statistics(images, t_images, labels, t_labels)
-
 (m,n) = images.shape
 bias = np.ones((m,1))
 images = np.hstack((bias,images))
@@ -20,10 +19,9 @@ images = np.hstack((bias,images))
 t_bias = np.ones((m2,1))
 t_images = np.hstack((t_bias,t_images))
 images=np.array([images])
-num_class = len(np.unique(labels))
-theta = np.random.rand(num_class,n+1)
-theta = np.array([theta])
-
-h_final = hypothesis(images,labels)
+num_class=len(np.unique(labels))
+theta=np.random.rand(num_class,n+1)
+theta=np.array([theta])
+h_final=hypothesis(num_class,images,labels,theta)
 print(h_final.shape)
 print(h_final)
