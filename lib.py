@@ -1,6 +1,6 @@
 import numpy as np
 
-def hypothesis = (images, labels)
+def hypothesis (images, labels)
 
 print_statistics(images, t_images, labels, t_labels):
     #number of training dataset
